@@ -6,11 +6,10 @@ html > body{
 header, nav, section, footer{
     margin: 0 auto;
     width:1080px;
-    border: 2px solid black;
 }
 header {
-    border:1px solid red;
     margin: 0 auto;
+    padding-top:18px;
 }
 nav{
     display:flex;
@@ -52,7 +51,7 @@ section{
 }
 footer{
     height:50px;
-
+    border:1px solid black;
 }
 /* header */
 .header-top{
@@ -99,4 +98,65 @@ footer{
     width: 26px;
     height: 26px;
     position: relative;
+}
+/* searchbox */
+.searchbox{
+    width:706px;
+    height:58px;
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    border-radius: 33px;
+    border:1px solid #03c75a;
+}
+.searchbox > input{
+    width:480px;
+    border:0px;
+}
+.searchbox > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox-item1,.searchbox-item2{
+    padding:0 8px;
+}
+.searchbox-item3{
+    padding:0 25px;
+}
+.searchbox-item1>span{
+    content: "";
+    display: block;
+    background-image: url(/img/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -50px -270px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 16px;
+}
+.searchbox-item2>span{
+    content: "";
+    display: block;
+    background-image: url(/img/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -412px -352px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 6px;
+}
+.searchbox-item3>span{
+    content: "";
+    display: block;
+    background-image: url(/img/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -364px -132px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+.header-middle-logo{
+    position: relative;
+    top:4px;
+    right:12px;
+    padding-left: 31px;
 }
