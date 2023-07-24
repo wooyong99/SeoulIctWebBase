@@ -23,7 +23,7 @@ console.log("u_case2 : "+u_case2);
 
 // null 값이 나오는 Case
 console.log("=== null 값이 나오는 Case ===");
-// Case 2 - 변수 초기화 시 null 값 대입
+// Case 1 - 변수 초기화 시 null 값 대입
 let n_case1 = null;
 console.log("n_case1 : "+n_case1)
 // Case 2 - 함수의 return 값이 null일때
@@ -32,4 +32,43 @@ function fun2(){
 }
 let n_case2 = fun2()
 console.log("n_case2 : "+n_case2)
+
+
+console.log("=== 비교 연산자를 활용하여 케이스에 따라 null인지 undefined인지 확인하는 코드 ===")
+// Case 1 - 값을 할당하지 않은 변수 / 초기화 되지 않은 변수
+let u_case3;
+if(u_case3 === undefined){
+    console.log(typeof(u_case3)+"입니다.");
+}else{
+    console.log("undefined가 아닙니다.")
+}
+// Case 2 - 함수가 값을 return 하지 않았을때
+function fun1(){
+    return
+}
+let u_case4 = fun1();
+if(u_case4 === undefined){
+    console.log(typeof(u_case4)+"입니다.");
+}else{
+    console.log("undefined가 아닙니다.")
+}
+
+// Case 1 - 변수 초기화 시 null 값 대입
+let n_case3 = null;
+if(n_case3 === null){
+    console.log(typeof(n_case3)+"입니다.");
+}else{
+    console.log("null이 아닙니다.")
+}
+// Case 2 - 함수의 return 값이 null일때
+function fun2(){
+    return null
+}
+let n_case4 = fun2()
+if(n_case4 === null){
+    console.log(typeof(n_case4)+"입니다.");
+}else{
+    console.log("undefined가 아닙니다.")
+}
+
 
